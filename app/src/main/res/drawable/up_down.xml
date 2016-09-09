@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:state_window_focused="false" android:color="#000" />
+    <item android:state_focused="false" android:state_pressed="true"  android:color="#000" />
+    <!-- 默认时的背景图片-->
+    <item android:color="#d71345" />
+
+
+</selector>
+
+

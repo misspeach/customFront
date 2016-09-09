@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#d71345" >
+        <LinearLayout
+            android:id="@+id/protocol_bk"
+            android:layout_width="50dp"
+            android:layout_height="60dp">
+        <Button
+            android:id="@+id/protocol_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dip"
+            android:background="@drawable/back"
+
+            />
+            </LinearLayout>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="使用协议"
+            android:textColor="#fff"
+            android:typeface="monospace"
+            android:textSize="24sp"
+            android:layout_marginRight="55dp" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="一、特别提示"
+            android:textColor="#d71345"
+            android:textSize="15dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        我们的软件团队在此特别提醒您（用户）在注册成为Changing用户之前，请认真阅读本《Changing用户服务协议》（以下简称“协议”），确保您充分理解本协议中各条款。请您审慎阅读并选择接受或不接受本协议。除非您接受本协议所有条款，否则您无权注册、登录或使用本协议所涉服务。您的注册、登录、使用等行为将视为对本协议的接受，并同意接受本协议各项条款的约束。  本协议约定Changing与用户之间关于“Changing”服务（以下简称“服务”）的权利义务。“用户”是指注册、登录、使用本服务的个人。本协议可由Changing随时更新，更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知，用户可在本APP中查阅最新版协议条款。在修改协议条款后，如果用户不接受修改后的条款，请立即停止使用Changing提供的服务，用户继续使用Changing提供的服务将被视为接受修改后的协议。
+"
+
+            android:textSize="13dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="二、账号注册"
+            android:textColor="#d71345"
+            android:textSize="15dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        1、用户在使用本服务前需要注册一个“Changing”账号。“Changing”账号应当使用手机号码绑定注册，请用户使用尚未与“Changing”账号绑定的手机号码，以及未被Changing根据本协议封禁的手机号码注册“Changing”账号。Changing可以根据用户需求或产品需要对账号注册和绑定的方式进行变更，而无须事先通知用户。"
+            android:textSize="13dp"
+            android:padding="10dp" />'
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        2、如果注册申请者有被Changing封禁的先例或涉嫌虚假注册及滥用他人名义注册，及其他不能得到许可的理由，Changing将拒绝其注册申请。"
+            android:textSize="13dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        3、鉴于“Changing”账号的绑定注册方式，您同意Changing在注册时将允许您的手机号码及手机设备识别码等信息用于注册。"
+            android:textSize="13dp"
+            android:padding="10dp"
+            /><TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="        4、在用户注册及使用本服务时，Changing需要搜集能识别用户身份的个人信息以便Changing可以在必要时联系用户，或为用户提供更好的使用体验。Changing搜集的信息包括但不限于用户的姓名、地址；Changing同意对这些信息的使用将受限于第三条用户个人隐私信息保护的约束。"
+        android:textSize="13dp"
+        android:padding="10dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="三、账户安全"
+            android:textColor="#d71345"
+            android:textSize="15dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        1、用户一旦注册成功，成为Changing的用户，将得到一个用户名和密码，并有权利使用自己的用户名及密码随时登陆Changing。"
+            android:textSize="13dp"
+            android:padding="10dp" />'
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        2、用户对用户名和密码的安全负全部责任，同时对以其用户名进行的所有活动和事件负全责。"
+            android:textSize="13dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        3、用户不得以任何形式擅自转让或授权他人使用自己的Changing用户名。"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="        4、如果用户泄漏了密码，有可能导致不利的法律后果，因此不管任何原因导致用户的密码安全受到威胁，应该立即和Changing客服人员取得联系，否则后果自负。"
+        android:textSize="13dp"
+            android:padding="10dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="四、用户声明与保证"
+            android:textColor="#d71345"
+            android:textSize="15dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        1、用户承诺其为具有完全民事行为能力的民事主体，且具有达成交易履行其义务的能力。"
+            android:textSize="13dp"
+            android:padding="10dp" />'
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        2、用户对用户名和密码的安全负全部责任，同时对以其用户名进行的所有活动和事件负全责。"
+            android:textSize="13dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        3、用户通过使用***的过程中所制作、上载、复制、发布、传播的任何内容，包括但不限于账号头像、名称、用户说明等注册信息及认证资料，或文字、语音、图片、视频、图文等发送、回复和相关链接页面，以及其他使用账号或本服务所产生的内容，不得违反国家相关法律制度，包含但不限于如下原则："
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （1）反对宪法所确定的基本原则的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （2）危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （3）损害国家荣誉和利益的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （4）煽动民族仇恨、民族歧视，破坏民族团结的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （5）破坏国家宗教政策，宣扬邪教和封建迷信的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （6）散布谣言，扰乱社会秩序，破坏社会稳定的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （7）散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （8）侮辱或者诽谤他人，侵害他人合法权益的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （9）含有法律、行政法规禁止的其他内容的。"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        5、用户不得利用“Changing”账号或本服务制作、上载、复制、发布、传播下干扰“***”正常运营，以及侵犯其他用户或第三方合法权益的内容："
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （1）含有任何性或性暗示的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （2）含有辱骂、恐吓、威胁内容的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （3）含有骚扰、垃圾广告、恶意信息、诱骗信息的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （4）涉及他人隐私、个人信息或资料的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （5）侵害他人名誉权、肖像权、知识产权、商业秘密等合法权利的；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （6）含有其他干扰本服务正常运营和侵犯其他用户或第三方合法权益内容的信息。"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="五、服务的终止"
+            android:textColor="#d71345"
+            android:textSize="15dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        1、在下列情况下，Changing有权终止向用户提供服务："
+            android:textSize="13dp"
+            android:padding="10dp" />'
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （1）在用户违反本服务协议相关规定时，Changing有权终止向该用户提供服务。如该用户再一次直接或间接或以他人名义注册为用户的，一经发现，Changing有权直接单方面终止向该用户提供服务；
+"
+            android:textSize="13dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （2）如Changing通过用户提供的信息与用户联系时，发现用户在注册时填写的联系方式已不存在或无法接通，Changing以其它联系方式通知用户更改，而用户在三个工作日内仍未能提供新的联系方式，Changing有权终止向该用户提供服务；
+"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （3）用户不得通过程序或人工方式进行刷量或作弊，若发现用户有作弊行为，Changing将立即终止服务，并有权扣留账户内金额；"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （4）一旦Changing发现用户提供的数据或信息中含有虚假内容，Changing有权随时终止向该用户提供服务；
+"
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （5）本服务条款终止或更新时，用户明示不愿接受新的服务条款； "
+            android:textSize="13dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        （6）其它Changing认为需终止服务的情况。 "
+        android:textSize="13dp"
+        android:padding="10dp"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="        2、服务终止后，Changing没有义务为用户保留原账号中或与之相关的任何信息，或转发任何未曾阅读或发送的信息给用户或第三方。"
+            android:textSize="13dp"
+            android:padding="10dp" />'
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

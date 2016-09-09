@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/div_white"
+    >
+        <!--ToolBar-->
+            <android.support.v7.widget.Toolbar
+            android:id="@+id/add_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme">
+
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left">
+                    <Button
+                            android:id="@+id/back"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/back"
+                    />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right">
+
+                    <Button
+                            android:id="@+id/clock"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@mipmap/clock"
+
+                   />
+
+                </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    <!--clock in-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rectangle"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/clockin"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="16dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+
+            />       <!--android:background="@drawable/clock_in"-->
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/share"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:text="分享习惯"
+            />
+
+    </RelativeLayout>
+
+    <!--统计数据-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/share"
+        >
+        <TextView
+            style="@style/dataStyle"
+            android:text="@string/data1"
+            />
+
+        <TextView
+            style="@style/dataStyle"
+            android:id="@+id/show_insist_day"/>
+        <TextView
+            style="@style/dataStyle"
+            android:text="@string/data3"/>
+        <TextView
+            style="@style/dataStyle"
+            android:id="@+id/show_target_day"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="13dp"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:background="@drawable/share"
+        >
+        <TextView
+            style="@style/dataStyle"
+            android:text="@string/data2"
+            />
+
+        <TextView
+            style="@style/dataStyle"
+            android:id="@+id/show_current_insist_day"/>
+        <TextView
+            style="@style/dataStyle"
+            android:text="@string/data3"/>
+        <TextView
+            style="@style/dataStyle"
+            android:id="@+id/show_max_insist_day"/>
+    </LinearLayout>
+
+<!--calendar-->
+    <!--外边框-->
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rectangle"
+        android:layout_centerInParent="true"
+        tools:context=".CustomManagement.show_custom">
+        <!--month-->
+        <RelativeLayout
+            android:id="@+id/head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                android:id="@+id/tvCurrentMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+        <!--week-->
+        <LinearLayout
+            android:id="@+id/week_layout"
+            android:layout_below="@+id/head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/sunday"
+                        android:textColor="@color/font_default_color"/>
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/monday"
+                        android:textColor="@color/font_default_color"/>
+
+
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/tuesday"
+                        android:textColor="@color/font_default_color"/>
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/wednesday"
+                        android:textColor="@color/font_default_color"/>
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/thursday"
+                        android:textColor="@color/font_default_color"/>
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/friday"
+                        android:textColor="@color/font_default_color"/>
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/saturday"
+                        android:textColor="@color/font_default_color"/>
+
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/week_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/layout_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_below="@+id/vp_calendar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
+

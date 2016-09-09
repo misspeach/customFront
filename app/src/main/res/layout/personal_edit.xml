@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical"
+    tools:context=".gehui.PersonManagement.EditActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/edit_back"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#d71345" >
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="60dp">
+        <Button
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dip"
+            android:background="@drawable/back"
+
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="个人资料"
+            android:textColor="#fff"
+            android:typeface="monospace"
+            android:textSize="24sp"
+            android:layout_marginRight="50dp" />
+
+    </LinearLayout>
+
+    <!--头像-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/setting_personal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/image"
+            android:layout_gravity="center" />
+        <TextView
+
+            android:layout_width="245dp"
+            android:layout_height="50dp"
+            android:text="   上传头像"
+            android:textSize="17dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_gravity="center" />
+        <com.example.shizhan.customfront.gehui.PersonManagement.AvatarImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/changing" />
+
+
+    </LinearLayout>
+
+    <!--昵称，性别，生日-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/setting_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/nickname"
+            android:layout_gravity="center" />
+        <TextView
+
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:text="   昵称"
+            android:textSize="17dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_gravity="center" />
+      <TextView
+          android:id="@+id/edit_nickname"
+          android:layout_width="90dp"
+          android:layout_height="50dp"
+          android:text=""
+          android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <!--性别-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="horizontal"
+
+        android:background="#FFFFFF"
+        android:gravity="center">
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:id="@+id/ed_radio_group">
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/boy"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"/>
+    <RadioButton
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center"
+        android:id="@+id/radio_man" />
+<TextView
+    android:layout_width="70dp"
+    android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/girl"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"
+            />
+
+    <RadioButton
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center"
+        android:id="@+id/radio_woman" />
+</RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <!--生日-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/edit_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:onClick="setDate"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/birthday"
+            android:layout_gravity="center" />
+        <TextView
+
+            android:layout_width="245dp"
+            android:layout_height="50dp"
+            android:text="   生日"
+            android:textSize="17dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/ed_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+<!--个性签名-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+    </LinearLayout>
+    <LinearLayout
+android:id="@+id/setting_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/p_sign"
+            android:layout_gravity="center" />
+        <TextView
+
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:text="   个性签名"
+            android:textSize="17dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_gravity="center" />
+        <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:src="@drawable/forward"-->
+            <!--android:layout_gravity="center" />-->
+        <TextView
+            android:id="@+id/edit_signature"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:text="成功，源于好习惯"
+            android:gravity="center_vertical"
+            android:maxEms="15"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+    <!--修改密码-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="修改密码"
+            android:background="#FFFFFF"
+            android:textColor="#d71345"
+            android:textSize="17dp"
+            android:gravity="center_vertical|center_horizontal"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

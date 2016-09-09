@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#d71345" >
+
+        <LinearLayout
+            android:id="@+id/personal_bak"
+            android:layout_width="50dp"
+            android:layout_height="60dp">
+            <Button
+                android:id="@+id/about_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dip"
+                android:background="@drawable/back"
+
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="个人相关"
+            android:textColor="#fff"
+            android:typeface="monospace"
+            android:textSize="24sp"
+            android:layout_marginRight="55dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FFF" >
+       </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="问题1：无法显示个人资料"
+            android:textColor="#d71345"
+            android:textSize="15dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="请检查网络连接是否可用；并查看帐号是否处于登录状态。"
+            android:textSize="13dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="问题2：如何修改个人资料"
+            android:textColor="#d71345"
+            android:textSize="15dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="请在个人中心点击右上角“设置”按钮，在设置页面第一项“编辑个人资料”中修改即可；"
+            android:textSize="13dp"
+            android:padding="10dp" />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="请按要求格式修改个人资料；"
+        android:textSize="13dp"
+        android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="在选择生日时，请将日期滚轴对准数字，点击“确认”后即可记录选择的生日。"
+            android:textSize="13dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="问题3：无法上传头像"
+            android:textColor="#d71345"
+            android:textSize="15dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="请查看移动设备相机功能可否正常使用；"
+            android:textSize="13dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="从相册中选择时请保证选择的图片格式为常见图片格式。"
+            android:textSize="13dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="问题4：无法修改密码"
+            android:textColor="#d71345"
+            android:textSize="15dp"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="修改密码需要输入旧密码，若忘记了旧密码，请在登录页面选择“忘记密码”按钮来找回密码。"
+            android:textSize="13dp"
+            android:padding="10dp" />
+</LinearLayout>
+</LinearLayout>
